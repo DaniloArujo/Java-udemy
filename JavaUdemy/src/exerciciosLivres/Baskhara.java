@@ -1,4 +1,4 @@
-package exLivres;
+package exerciciosLivres;
 
 import java.util.Scanner;
 
