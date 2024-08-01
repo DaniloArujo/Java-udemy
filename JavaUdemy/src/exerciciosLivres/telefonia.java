@@ -17,12 +17,10 @@ public class telefonia {
         System.out.print("Entre com a quantidade de minutos: ");
         int minutos = scanner.nextInt();
 
-        int valor;
+        int valor = 50;
 
-        if (minutos <= 100) {
-            valor = 50;
-        }else{
-            valor = 50 + ((minutos - 100) * 2);
+        if(minutos > 100){
+            valor += ((minutos - 100) * 2);
         }
         
         System.out.printf("Valor a pagar: R$%d.00",valor);
