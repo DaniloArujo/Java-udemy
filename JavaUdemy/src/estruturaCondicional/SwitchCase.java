@@ -13,11 +13,7 @@ public class SwitchCase {
 
         System.out.println("Entre com o valor: ");
         int valor = scanner.nextInt();
-        
-        if (valor < 1 || valor > 7) {
-            System.out.println("Entrada inválida");    
-            System.exit(0);
-        }
+    
         
         switch (valor) {
             case 1:{
@@ -52,6 +48,10 @@ public class SwitchCase {
                 System.out.println("Sabado");
             }
                 break;
+            
+            default:{
+                System.out.println("Numero inválido");
+            }
             
         };
 
