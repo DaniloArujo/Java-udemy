@@ -18,8 +18,6 @@ public class DoWhile {
             System.out.print("Entre com o valor a ser convertido: ");
             double c = scanner.nextDouble();
 
-
-
             double f = ((9*c)/5) + 32;
 
             System.out.printf("Equivalente em Fahrenheight: %f",f);
