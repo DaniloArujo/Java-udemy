@@ -13,8 +13,9 @@ public class MaiorNumero {
         
         int higher = max(a,b,c);
 
+        showResult(higher);
 
-        System.out.println(higher);
+        
         scanner.close();
     }
 
@@ -31,5 +32,11 @@ public class MaiorNumero {
         }
 
         return aux;
+    }
+
+    public static void showResult(int x){
+
+        System.out.printf("O maior resultado foi %d \n",x);
+
     }
 }
