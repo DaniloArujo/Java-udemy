@@ -1,7 +1,8 @@
 package exerciciosLivres.produtosOOP.entities;
 
+
 public class Product {
-    
+
     public String name;
     public double price;
     public int quantity;
@@ -19,6 +20,6 @@ public class Product {
     }
 
     public String toString(){
-        return String.format("product data: %s, R$%.2f, %d units, total: %.2f\n",name,price,quantity,totalValueInStock());
+        return String.format("product data: %s, $%.2f, %d units, total: %.2f\n",name,price,quantity,totalValueInStock());
     }
 }
