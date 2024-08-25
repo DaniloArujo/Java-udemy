@@ -1,4 +1,4 @@
-package exerciciosLivres.exercicioOOP02.aplication;
+package exerciciosLivres.exercicioOOP02.application;
 
 import java.util.Locale;
 

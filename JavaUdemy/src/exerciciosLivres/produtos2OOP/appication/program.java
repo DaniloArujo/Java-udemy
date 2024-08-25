@@ -1,4 +1,4 @@
-package exerciciosLivres.produtos2OOP.apication;
+package exerciciosLivres.produtos2OOP.appication;
 
 import java.util.Locale;
 import java.util.Scanner;

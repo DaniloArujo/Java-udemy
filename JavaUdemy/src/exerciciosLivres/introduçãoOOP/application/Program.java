@@ -1,4 +1,4 @@
-package exerciciosLivres.introduçãoOOP.aplication;
+package exerciciosLivres.introduçãoOOP.application;
 
 import java.util.Locale;
 import java.util.Scanner;
