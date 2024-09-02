@@ -14,6 +14,7 @@ public class Program {
 
         product.setName("Computer");
         product.setPrice(3000);
+        product.setQuantity(0);
         product.addProducts(200);
 
 

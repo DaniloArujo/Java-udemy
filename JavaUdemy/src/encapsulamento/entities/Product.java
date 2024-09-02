@@ -59,7 +59,7 @@ public class Product {
     }
 
     public void addProducts(int quantity){
-        setPrice(getPrice() + quantity);
+        setQuantity(getQuantity() + quantity);
     }
 
     public void removeProducts(int quantity){
