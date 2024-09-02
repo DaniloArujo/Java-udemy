@@ -6,66 +6,58 @@ public class Product {
     private int quantity;
 
     // getters
-    public String getName() {
+    public String getName(){
         return name;
     }
 
-    public double getPrice() {
+    public double getPrice(){
         return price;
     }
 
-    public int getQuantity() {
+    public int getQuantity(){
         return quantity;
     }
 
     // setters
-    public void setName(String name) {
+    public void setName(String name){
         this.name = name;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(double price){
         this.price = price;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
     }
 
     // construtores
     public Product() {
     }
 
-    public Product(String name) {
-        setName(name);
+    public Product(String name){
+        this.name = name;
     }
 
-    public Product(String name, double price) {
-        setName(name);
-        setPrice(price);
+    public Product(String name, double price){
+        this.name = name;
+        this.price = price;
     }
 
-    public Product(String name, double price, int quantity) {
-        setName(name);
-        setPrice(price);
-        setQuantity(quantity);
+    
+
+    // métodos
+    public double totalValueInStock(){
+        return this.price * this.quantity;
     }
 
-    // methodos
-
-    public double totalValueInStock() {
-        return getPrice() * getQuantity();
+    public void addProducts(int quantity){
+        this.quantity += quantity;
     }
 
-    public void addProducts(int quantity) {
-        setQuantity(getQuantity() + quantity);
+    public void removeProducts(int quantity){
+        this.quantity -= quantity;
     }
 
-    public void removeProducts(int quantity) {
-        setQuantity(getQuantity() - quantity);
-    }
 
-    public String toString() {
-        return String.format("name: %s \nprice: %.2f\nquantity: %d\nvalue in stock: %.2f\n", getName(), getPrice(),
-                getQuantity(), totalValueInStock());
+    //toString
+    public String toString(){
+        return String.format("name: %s \nprice: %.2f\nquantity: %d\nvalue in stock: %.2f\n", getName(), getPrice(),getQuantity(), totalValueInStock());
     }
 }
