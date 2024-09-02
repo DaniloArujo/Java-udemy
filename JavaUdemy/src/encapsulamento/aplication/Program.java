@@ -17,7 +17,6 @@ public class Program {
         product.setQuantity(0);
         product.addProducts(200);
 
-
         System.out.println(product);
     }
 }
