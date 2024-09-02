@@ -22,8 +22,10 @@ public class program {
         int quantity = scanner.nextInt();
 
         Product product = new Product(name,price,quantity);
+        Product product2 = new Product(name, price);
 
         System.out.println(product);
+        System.out.println(product2);
 
         scanner.close();
     }
