@@ -24,11 +24,11 @@ public class Account {
         return this.name;
     }
 
-    public int accountNumber(){
+    public int getAccountNumber(){
         return this.accountNumber;
     }
 
-    public double accountCredit(){
+    public double getAccountCredit(){
         return this.accountCredit;
     }
     
