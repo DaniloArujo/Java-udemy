@@ -11,19 +11,19 @@ public class program {
         System.out.println("Entre com o tamanho do array: ");
         int arrayLenght = scanner.nextInt();
 
-        int [] vetor = new int[arrayLenght];
-        int soma = 0;;
+        double[] vetor = new double[arrayLenght];
+        double soma = 0;
 
         for(int i = 0; i < arrayLenght; i++){
             System.out.printf("Entre com o %dº numero: ",i + 1);
-            vetor[i] = scanner.nextInt();
+            vetor[i] = scanner.nextDouble();
             soma += vetor[i];
         }
 
-        double media = (double) soma /arrayLenght;
+        double media = soma /arrayLenght;
 
 
-        System.out.println(media);
+        System.out.printf("%.2f",media);
 
         scanner.close();
     }
