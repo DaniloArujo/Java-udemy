@@ -16,7 +16,7 @@ public class Program {
         Product[] lista = new Product[size];
 
 
-        for(int i = 0; i < size; i++){
+        for(int i = 0; i < lista.length; i++){
             System.out.printf("Entre com o nome: ");
             String nome = scanner.nextLine();
             System.out.printf("Entre com o valor: ");
@@ -33,7 +33,7 @@ public class Program {
             sum += lista[i].getPrice();
         }
 
-        System.out.printf("media: %f",sum/size);
+        System.out.printf("media: %f",sum/lista.length);
 
 
 

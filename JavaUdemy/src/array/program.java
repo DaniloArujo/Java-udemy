@@ -12,15 +12,16 @@ public class program {
         int arrayLenght = scanner.nextInt();
 
         double[] vetor = new double[arrayLenght];
-        double soma = 0;
 
-        for(int i = 0; i < arrayLenght; i++){
+
+        double soma = 0;
+        for(int i = 0; i < vetor.length; i++){
             System.out.printf("Entre com o %dº numero: ",i + 1);
             vetor[i] = scanner.nextDouble();
             soma += vetor[i];
         }
 
-        double media = soma /arrayLenght;
+        double media = soma /vetor.length;
 
 
         System.out.printf("%.2f",media);
