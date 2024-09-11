@@ -38,9 +38,22 @@ public class Program {
             System.out.println("######################");
         }
 
-        
+        System.out.print("Enter the employee id that will salary increased: ");
+        int id = scanner.nextInt();scanner.nextLine();
+
+        for(int i = 0; i < list.size(); i++){
+            if( list.get(i).getId() == id){
+                System.out.println("Enter the percent: ");
+                double percent = scanner.nextDouble(); scanner.nextLine();
+                list.get(i).increaseSalary(percent);
+
+                break;
+            }
+        };
 
 
         scanner.close();
     }
+
+    
 }
