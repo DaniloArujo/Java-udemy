@@ -3,8 +3,13 @@ package exerciciosLivres.ListaDeObjetos.entities;
 public class Employee {
     
     private String name;
-    private int id;
-    private double salary;
+    private Integer id;
+    private Double salary;
+
+
+    public Employee(){
+
+    }
 
     public Employee(String name, int id, double salary){
         this.name = name;
@@ -33,8 +38,16 @@ public class Employee {
         return this.salary;
     }
 
+    //methods
 
+    public void increaseSalary(double percentage){
+        this.salary += this.salary * (percentage / 100);
+    }
 
+    @Override
+    public String toString() {
+        return "Employee [name=" + name + ", id=" + id + ", salary=" + salary + "]";
+    }
 
 
 
