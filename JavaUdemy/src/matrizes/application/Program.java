@@ -28,6 +28,29 @@ public class Program {
             System.out.println();
         };
 
+        System.out.println("\n-------------------");
+        //diagonal
+
+        for(int x = 0; x < arraySize; x++){
+            for(int y = 0; y < arraySize; y++){
+                if(x == y){
+                    System.out.print(mat[x][y]+ " ");
+                };
+            };
+        };
+
+
+
+        System.out.println("\n-------------------");
+
+        for(int x = 0; x < arraySize; x++){
+            for(int y = 0; y < arraySize; y++){
+                if(mat[x][y] < 0){
+                    System.out.print(mat[x][y]+ " ");
+                };
+            };
+        };
+
         scanner.close();
     }
 }
