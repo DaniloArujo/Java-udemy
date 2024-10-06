@@ -32,13 +32,8 @@ public class Program {
         //diagonal
 
         for(int x = 0; x < arraySize; x++){
-            for(int y = 0; y < arraySize; y++){
-                if(x == y){
-                    System.out.print(mat[x][y]+ " ");
-                };
-            };
+            System.out.print(mat[x][x]+ " ");
         };
-
 
 
         System.out.println("\n-------------------");
