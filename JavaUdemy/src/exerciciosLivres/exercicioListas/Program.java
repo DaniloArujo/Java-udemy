@@ -19,6 +19,13 @@ public class Program {
             System.out.println(x);
         }
 
-        
+        list.add(2, "Marco");
+
+        System.out.println("###################");
+        for(String x : list){
+            System.out.println(x);
+        }
+        System.out.println(list.size());
+
     }
 }
