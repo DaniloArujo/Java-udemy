@@ -27,5 +27,21 @@ public class Program {
         }
         System.out.println(list.size());
 
+        list.remove("Anna");
+ 
+        System.out.println("###################");
+        for(String x : list){
+            System.out.println(x);
+        }
+        System.out.println(list.size());
+        list.removeIf(x -> x.charAt(0) == 'M');
+
+        System.out.println("###################");
+        for(String x : list){
+            System.out.println(x);
+        }
+
+        System.out.println("Index of bob: " + list.indexOf("Bob"));
+
     }
 }
