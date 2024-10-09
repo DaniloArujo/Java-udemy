@@ -35,6 +35,8 @@ public class Program {
         System.out.println(d09);
         System.out.println(d10);
         System.out.println(d11);
+        System.out.println(d10.format(fmt1));
+        System.out.println(fmt1.format(d11));
 
 
     }
