@@ -37,6 +37,7 @@ public class Program {
         System.out.println(d11);
         System.out.println(d10.format(fmt1));
         System.out.println(fmt1.format(d11));
+        System.out.println(d11.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")));
 
 
     }
