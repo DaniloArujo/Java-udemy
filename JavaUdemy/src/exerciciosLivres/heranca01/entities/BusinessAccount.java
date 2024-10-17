@@ -14,14 +14,13 @@ public class BusinessAccount extends Account{
     }
 
     public void loan(Double amount){
-        balance += amount;
+        balance -= amount;
     }
 
     @Override
     public String toString() {
         return "BusinessAccount{" +
                 "LoanLimit=" + LoanLimit +
-                ", balance=" + balance +
                 "} " + super.toString();
     }
 }
