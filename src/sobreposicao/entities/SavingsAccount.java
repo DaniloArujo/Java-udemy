@@ -30,8 +30,10 @@ public class SavingsAccount extends Account{
     }
 
     @Override
-    public void withdraw(Double amount) {
-        balance -= amount;
+    public final void withdraw(Double amount) {
+        super.withdraw(amount);
+        balance -= 2.0;
+        //balance -= amount;
         //super.withdraw(amount);
     }
 }
